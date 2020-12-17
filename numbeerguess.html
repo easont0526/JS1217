@@ -5,15 +5,15 @@
 </head>
 <body>
 	<script type="text/javascript">
-		var value;
+		var rand;
 		var guessnumber;
-		value = Math.floor((Math.random()*10+1));
+		rand = Math.floor((Math.random()*10+1));
 		guessnumber= window.prompt("Please guess a number from 1 to 10")
-		while(guessnumber!=value){
+		while(guessnumber!=rand){
 			guessnumber = window.prompt("Wrong! Please enter a number from 1 to 10 again")
 		}
-		function myFuction(guessnumber,value){
-			if(guessnumber == value) {
+		function myFuction(guessnumber,rand){
+			if(guessnumber == rand) {
 				return "Correct!";
 			}
 		document.writeln(myFuction(guessnumber,value))
